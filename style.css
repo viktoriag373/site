@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+
+
+body {
+    background-color: #34495e; 
+    color: #c8c8c8;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(images/bg.jpg);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    max-width: 1170px; /* максимальная ширина контент блоков на странице */
+    margin: 0 auto; /* центрирование блока */
+}
+
+.wrapper img{
+   
+
+}
+
+#header-left {
+    float: left;
+    width: 60%;
+}
+#header-right {
+    float: left;
+    width: 40%;
+}
+
+#header-shadow {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+#header-left h1 {
+    font-size: 72px;
+    margin-top: 50px;
+    line-height: 1.1;
+}
+#header-left h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
+
+#header-left p {
+    font-size: 18px;
+    margin-bottom: 70px;
+    letter-spacing: 1px; /* увеличиваем межбуквенный интервал */
+}
+
+#header-left h1 strong {
+    font-weight: 400;
+}
+
+header .wrapper {
+    padding: 100px 15px 50px 50px;
+}
+
+#header-left h1, #header-left h2, #header-left p {
+    margin-right: 40px;
+}
+
+#header-right img {
+    max-width: 252px;
+}
+
+a.button-download {
+    display: block-inline; /*  делаем ссылку блочным элементом, но обтекаемым другими */
+    color: #fff; /* меняем цвет ссылок по умолчанию */
+    border: 1px solid #fff; 
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    padding-right: 20px;
+    padding: 10px 16px; /* выставляем отступы в формате: 10px - сверху и снизу, 16px - слева и справаdisplay  */
+    text-decoration: none; /* отменяем подчеркивание текста ссылки */
+}
+
+a.button-download .fa {
+    margin-right: 20px;
+}
+
+a.button-download:hover {
+    background: #fff; /* меняем фон кнопки на белый */
+    color: #111; /* меняем цвет шрифта на почти черный */
+}
