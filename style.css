@@ -24,14 +24,9 @@ header {
     margin: 0 auto; /* центрирование блока */
 }
 
-.wrapper img{
-   
-
-}
-
 #header-left {
     float: left;
-    width: 60%;
+    width: 70%;
 }
 #header-right {
     float: left;
@@ -46,6 +41,7 @@ h1 {
     margin-bottom: 30px;
     font-size: 60px;
     font-weight: 100;
+    line-height: 1.1;
 }
 
 #header-left h1 {
@@ -101,4 +97,153 @@ a.button-download .fa {
 a.button-download:hover {
     background: #fff; /* меняем фон кнопки на белый */
     color: #111; /* меняем цвет шрифта на почти черный */
+}
+
+#navbar-top {
+    min-height: 70px; 
+    background-color: #181b3d;
+    box-shadow: 0 0px 10px rgba(0,0,0,.2); 
+}
+
+#navbar-top .logo {
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px; /* высота межстрочного интервала текста */
+    font-weight: 700; 
+    padding: 15px 15px; /* внутренние отступы в формате двух значений: слева-справа, сверху-снизу */
+    display: block;
+    float: left; /* прижимаем логотип к краю левой части блока */
+    text-decoration: none; /* отключаем подчеркивание ссылки */
+}
+
+#navbar-top menu {
+    list-style: none; /* отключаем отображение маркеров */
+    float: right; /* прижимаем меню к правой границе блока */
+    margin: 0; /* сбрасываем внешние отступы */
+    padding: 0; /* сбрасываем внутренние отступы */
+}
+#navbar-top menu li {
+    float: left; /* чтобы пункты меню располагались в линию друг за другом */
+    display: block; /* делаем пункты блочными элементами */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#navbar-top menu li a {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none; 
+    line-height: 70px; /* данный межстрочный интервал позволяет выравнить пункты меню вертикально по центру, за счет того что его значение равно высоте элемента #navbar-top  */
+    display: block; /* делаем ссылки блочными элементами */
+}
+/* меняем цвет активных (выбранных) ссылок, а также тех на которые наведен курсор */ 
+#navbar-top menu li a:hover, #navbar-top menu li.active a {
+    color: #0099ff;
+}
+
+div.header {
+    width: 80%; 
+    margin: 0 auto; /* выравниваем блок по центру */
+    text-align: center; /* выравниванием содержимое блока по центру */
+}
+
+#features {
+    background: #fff; /* белый фон блока */
+    padding-top: 100px;
+}
+#features h1 {
+    color: #111; 
+}
+#features p {
+    font-weight: 300;
+    letter-spacing: 0.5px; /* увеличиваем интервал между символами в тексте */
+    margin: 0 0 10px; /* внешний отступ в формате: сверху, слева-справа и снизу, т.е. по сути мы сбрасываем отступы со всех сторон, кроме низа в 10 пикселей */
+    color: #222;
+}
+
+.underline i.fa {
+    font-size: 20px; /* увеличиваем размер иконки до 20х20 пикселей */
+    color: #0099FF; /* цвет иконки */
+}
+
+.underline {
+    position: relative;
+    font-size: 20px;
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.underline:before, .underline:after {
+    background-color: #777; /* цвет фона, но в нашем случае это цвет линий  */
+    position: absolute; /* абсолютное позиционирование элементов внутри .underline */
+    content: ""; /* пустой контент псевдоэлементов */
+    width: 150px; /* ширина псевдоэлемнета - у нас это длинна линии */
+    height: 1px; /* высота псевдоэлемента - толщина линии */
+    top: 50%; /* отступ сверху линии на 50% от высоты .underline (10px, потому что у .underline высота 20px) */
+}
+.underline:before {
+    left: 0; /* прижимаем линию к левому краю .underline */
+}
+.underline:after {
+    right: 0; /* прижимаем линию к правому краю .underline */
+}
+
+#features-image {
+    float: left;
+    width: 30%;
+}
+#features-image img {
+    width: 252px;
+}
+#features-list {
+    float: left;
+    width: 70%;
+}
+#features-list .item {
+    width: 50%;
+    float: left;
+}
+
+#features-list, #features-list .item {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;	/* изменяем алгоритм расчета ширины и высоты элементов */ 
+    -webkit-box-sizing: border-box; /* тоже свойство box-sizing только для FireFox */
+    -moz-box-sizing: border-box; /* тоже свойство box-sizing для Safari, Chrome, Android */
+}
+
+
+#features-list .item .icon {
+    width: 58px; 
+    height: 58px;
+    float: left; /* прижимаем к левой границе, остальной контент обтекает справа */
+    color: #0099FF; /* цвет иконки */
+    font-size: 30px; /* для определения размера иконки */
+    border: 1px solid #0099FF;
+    text-align: center; /* выравниваем иконку внутри круга по центру */
+    line-height: 60px; /* выравнианием иконку вертикально */ 
+    border-radius: 100%; /* закругляем углы на 100% - в итоге получим круг */
+}
+
+#features-list .item .text {
+    margin-left: 80px;
+}
+
+#features-list .item .text h3 {
+    color: #2E2E2E;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#features-list .item .text  p {
+    letter-spacing: 0.5px;
+    margin: 0 0 10px;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+.clear {
+    clear: both;
 }
